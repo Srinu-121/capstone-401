@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+            /* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/free-psd/3d-background-with-podium-monsoon-season-sales_23-2150323228.jpg?w=740&t=st=1695838688~exp=1695839288~hmac=873ec891b809f89b6d668f308aa02048d44f5fe7f2017aed570195f02e0dcec7");
+    background-repeat: no-repeat;background-size: cover;
+}
+
+
+
+form {
+    background-color:lightcoral;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+    color: #070707;
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: skyblue;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color:yellow;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    form {
+        max-width: 100%;
+    }
+}
+
+        </style>
+
+    </head>
+    <body>
+        <h1>weather sign up Form</h1>
+        <form method="post" action="/signinSubmit">
+            Fullname:
+            <input type="text" name="FullName" /> <br />
+            email:
+            <input type="text" name="email" /> <br />
+            password:
+            <input type="text" name="password" /> <br />
+            dob:
+            <input type="text" name="dob" /> <br />
+            <input type="submit" />
+            </form>
+    </body>
+</html>
